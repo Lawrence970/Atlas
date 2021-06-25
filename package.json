@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.15",
+    "node": "^16.3.0",
+    "nodels": "^1.0.1"
+  },
+  "name": "atlas",
+  "description": "multiple page web application",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lawrence970/Atlas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lawrence970/Atlas/issues"
+  },
+  "homepage": "https://github.com/Lawrence970/Atlas#readme"
+}
