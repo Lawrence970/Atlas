@@ -39,7 +39,7 @@ function generateRndNum(){ //did this better than the last time :)
     return rndNum;            // return the rndNum Array
 }
 
-function scoreCounter(){
+function scoreCounterUpdate(){
     scoreNum = document.querySelector("#score-counter");
     scoreNum.innerHTML = score;
 }
@@ -47,23 +47,26 @@ function scoreCounter(){
 function checkAnswer(key,rndNum) { // 'key' is a string input from onkeydown function | 'rndNum' is input from same function stored: rndNum=generateRndNum();
 
     if(rndNum[0]>=rndNum[1] && key == "left"){
-        scoreCounter(); 
+        if(score != 0){
+            score +=1;
+        }
+        scoreCounterUpdater(); 
         
     } else if(rndNum[0]<=rndNum[1] && key == "left"){
         if(score != 0){
             score -=1;
         }
-        scoreCounter(); 
+        scoreCounterUpdate(); 
 
     } else if(rndNum[0]<=rndNum[1] && key == "right"){
         score +=1;
-        scoreCounter(); 
+        scoreCounterUpdate(); 
 
     } else if(rndNum[0]>=rndNum[1] && key == "right"){
         if(score != 0){
             score -=1;
         }
-        scoreCounter(); 
+        scoreCounterUpdate(); 
 
     }
 }
@@ -82,8 +85,8 @@ document.onkeydown = function(event){
 // spacebar action
     } else if (event.which == 32 ){ 
         generateRndNum();
-        score = 0; // GLOBAL VARIABLE OF EVIL BE CAREFUL
-        //reset timer
+        score = 0;
+        scoreCounterUpdate();
     }
 };
 // {SOLVED:a1} fixed this by changing innerHTML of rnd numbers inside generateRndNum() function
