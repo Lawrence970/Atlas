@@ -1,4 +1,5 @@
 window.onload = generateNumContainers();
+window.onload = 
 
 // global variables
 score = 0;
@@ -81,6 +82,7 @@ document.onkeydown = function(event){
     if (event.which == 37){             
         checkAnswer("left",rndNum);
     } else if (event.which == 39) {
+        Window.open();
         checkAnswer("right",rndNum);
 // spacebar action
     } else if (event.which == 32 ){ 
