@@ -67,6 +67,25 @@ body {
     transform:translate(-50%,-25%); /* (x , y) */
 }
 
+#instructions-modal{
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    border:none;
+}
+
+#instructions-button{
+    background-color: white;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+#instructions-button:hover {
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+}
+
 #home-button {
     font-size: 25px;
     letter-spacing: 2px;
@@ -75,10 +94,12 @@ body {
 #home-button a {
     text-decoration: none;
     color:white;
+
 }
 
 #score-counter {
     font-size:8em;
+    margin:10px;
     color:white;
 }
 
