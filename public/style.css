@@ -30,8 +30,15 @@ body {
     height:300px;
 }
 
-#top-section {
-    height:200px;
+/* this element/style used for spacing elements */
+#spacing-section {
+    height:100px;
+    background-color: #58DF8A;
+    /*center info*/
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 #middle-section {
@@ -91,7 +98,7 @@ body {
     letter-spacing: 2px;
 }
 
-#home-button a {
+#home-button {
     text-decoration: none;
     color:white;
 
@@ -135,4 +142,12 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+/* data manipulation */
+/* data manipulation */
+/* data manipulation */
+
+#data-manipulation-page-wrapper {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
