@@ -1,3 +1,60 @@
+/* GLOBAL styles*/
+
+.input-button{
+    border:none;
+    border-radius:5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.4em;
+    margin:10px;
+    cursor: pointer;
+    color:#282A35;
+    background-color: #58DF8A;
+}
+
+.input-button:hover{
+    background-color: #282A35;
+    color:#58DF8A;
+}
+
+.input-field{
+    height: 30px;
+    width: 400px;
+    text-align: center;
+    font-size:1.2em;
+    border:none;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+}
+
+.input-field:focus{
+    outline:none;
+    border:solid 1px black;
+}
+
+
+/* change active element button html tags with this class should also have onfocus also onblur*/
+.change-active-element-btn{
+    border:none;
+    border-radius:5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.4em;
+    cursor: pointer;
+    color:#282A35;
+    background-color: white;
+    margin: 25px;
+}
+
+.change-active-element-btn:hover{
+    background-color: rgb(241, 241, 241);
+    color:#353744;
+}
+
+.change-active-element-btn::placeholder{
+    color:black;
+}
+
+
+
 /*index.html*/
 /*index.html*/
 /*index.html*/
@@ -30,7 +87,7 @@ body {
     height:300px;
 }
 
-/* this element/style used for spacing elements */
+/* this element/style used for spacing/temp nav elements */
 #spacing-section {
     height:100px;
     background-color: #58DF8A;
@@ -55,9 +112,9 @@ body {
     background-color: white;
 }
 
-/*quickPick.html*/
-/*quickPick.html*/
-/*quickPick.html*/
+/*quickPick.html styles*/
+/*quickPick.html styles*/
+/*quickPick.html styles*/
 
 #quick-pick-page-wrapper {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -144,10 +201,35 @@ body {
     align-items: center;
 }
 
-/* data manipulation */
-/* data manipulation */
-/* data manipulation */
+/* data manipulation html styles*/
+/* data manipulation html styles*/
+/* data manipulation html styles*/
 
 #data-manipulation-page-wrapper {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#data-input-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:150px;
+    left: 225px;
+    right:0px;
+}
+#display-data-section{
+    background-color: rgb(236, 236, 236);
+}
+
+#data-manipulation-menu{
+    position:absolute;
+    display:flex;
+    top:100px;
+    bottom:0;
+    flex-direction: column;
+    border-right:#35374446 1px solid;
+    background-color: #58df8a11;
+    width:225px;
 }
