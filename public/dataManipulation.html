@@ -15,14 +15,16 @@
           
         <!-- FOR LATER USE-->
         <section id="spacing-section">
-            <a id="home-button" href="index.html">HOME</a>
+            <a class="home-button" href="index.html">HOME</a>
         </section>
 
         <!--data manip MENU here-->
         <section id="data-manipulation-menu">
-            <button class="change-active-element-btn">Add Info</button>
-            <button class="change-active-element-btn">Delete Info</button>
-            <button class="change-active-element-btn">Download Info</button>
+            <button class="change-active-element-btn">Get</button>
+            <button class="change-active-element-btn">Post</button>
+            <button class="change-active-element-btn">Edit</button>
+            <button class="change-active-element-btn">Delete</button>
+            <button class="change-active-element-btn">Download</button>
         </section>
         
         <!--data INPUT section here-->
@@ -34,7 +36,7 @@
                 placeholder="Name" 
                 onfocus="this.placeholder =''" 
                 onblur="this.placeholder='Name'">
-            <button class="input-button">INPUT NAME</button>
+            
             <!--Address input-->
             <input 
                 type="text" 
@@ -42,20 +44,34 @@
                 placeholder="Address" 
                 onfocus="this.placeholder =''" 
                 onblur="this.placeholder='Address'">
-            <button class="input-button">INPUT ADDRESS</button>
+            
             <!--Phone # input-->
             <input type="text" 
                 class="input-field" 
                 placeholder="Phone #" 
                 onfocus="this.placeholder =''" 
                 onblur="this.placeholder='Phone #'">
-            <button class="input-button">INPUT PHONE NUMBER</button>
+            <button class="input-button">Add</button>
 
         </main>
 
         <!--DISPLAY DATA section here-->
         <section id="display-data-section">
 
+            <div id="search-data-container">
+                <input 
+                    type="text"
+                    id="search-bar"
+                    placeholder="Search All Data"
+                    onfocus="this.placeholder =''" 
+                    onblur="this.placeholder='Search All Data'">
+            </div>
+
+            <div id="data-shown-container">
+                <span class="output-field-large">
+                    <!--JSON data will be shown here-->
+                </span>
+            </div>
         </section>
 
         <!--    
@@ -78,6 +94,6 @@
 
 
 
-    <script src="/webAppV1/script.js"></script>
+    <script src="/appJs/dataManip.js"></script>
 </body>
 </html>
