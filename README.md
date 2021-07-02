@@ -22,3 +22,15 @@ multiple page web application
 
 # Quick Pick
 
+---
+
+# Data Manipulation
+
+---
+
+# Global Styles
+
+- home-button
+- input-button
+- input-field
+- change-active-element-btn

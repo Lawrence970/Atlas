@@ -16,5 +16,5 @@ const Todo = mongoose.model("Todo", todoSchema); // setting the variable Todo to
 
 module.exports = {
     Todo,   // can export specific functions of the object ex: Todo.findbyid,
-    store,  // i am exporting the ENTIRE object when doing it this way.
+            // i am exporting the ENTIRE object when doing it this way.
 }
